@@ -1,7 +1,8 @@
 html {
-    background: url(https://img.freepik.com/vektoren-kostenlos/katzenliebhaber-muster-hintergrunddesign_53876-100662.jpg?w=2000);
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-image: url(https://img.freepik.com/vektoren-kostenlos/katzenliebhaber-muster-hintergrunddesign_53876-100662.jpg?w=2000);
+    background-size: cover;
+    background-position: 50px;
+  
 }
 
 * {
