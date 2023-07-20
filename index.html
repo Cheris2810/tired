@@ -11,22 +11,25 @@
         <meta name="description" content="The official website for The Little Starbucks Shop">
         <title>The Little Starbucks Shop</title>
         <link rel="icon" href="starbuck.png" type="image/x-icon"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Pacifico&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Home.css"/>
     </head>
 
 <body>
     <header>
-        <div>  
-            <div class="seina"></div>
-                <h1>
-                    <img class="logo-img" src="starbuck.png" alt="logo" title="Starbucks" width="7%"> 
-                    <!--<img class="logo-face" src="iconface.png" alt="logo" title="Facebook"> 
-                    <img class="logo-twitter" src="icontwitter.png" alt="logo" title="Twitter">-->
-                      
-                </h1>
+                
                 <br>
-                <div class="name-better">
+                <div id="top">
+                        <a href="https://www.starbucks.vn/">
+                        <img src="starbuck.png" alt="logo" title="Starbucks" width="100px" height="100px"></a> 
+                    
                     <h1> The Little Starbucks Shop</h1>
+                
                         <nav>
                             <ul>
                                     <li>
@@ -52,29 +55,30 @@
                                     <li>
                                         <a href="Join.html">Join</a>
                                     </li>
-                            </ul>  
-                        </nav>  
-            
+                            </ul> 
+                            <div class="logo-gh-fb-tw">
+                                <a href="https://github.com/Cheris2810"><img class="logo-github" src="icongithub.png" alt="logo" title="GitHub" width="45px" height="43px"></a>
+                                <a href="https://www.facebook.com/lam.nhu.5817/">
+                                <img class="logo-face" src="iconface.png" alt="logo" title="Facebook"></a> 
+                                <a href="https://twitter.com/LmNh20545310">
+                                <img class="logo-twitter" src="icontwitter.png" alt="logo" title="Twitter"></a>
+                            </div> 
+                        </nav>
+                        
                 </div>
-            </div>
         <figure>
         
         </figure>
     </header>
    
     <main>
-       <div class="main-SB">
-        <img class="img-ctySB" src="https://lynhuasaigon.com/wp-content/uploads/2021/12/vi-tri-cua-hang.jpg" alt="Drinking water preparation process" title="Starbucks">
-            
-            <div class="SB-note">
-                <div class="SB-note1">
-                    <h2>About <abbr title="The Little Starbucks Shop">LSS</abbr></h2>
+       <div class="main-about">
+                    <h2>About <abbr title="The Little Starbucks Shop">LSS</abbr></h2> 
                         <p>
                             <abbr title="The Little Starbucks Shop">LSS</abbr> was founded in <time datetime="1971">1971</time>. Our shop was built from a <strong><em> love of starbucks</em></strong>🌻🌻🌻 . We hope to be able to open more branches around the world
                         </p>
-                        
-                </div>
-                <div class="SB-note2">
+                      
+                <!--<div class="SB-note2">-->
                     <aside>
                         <h3>Starbucks Trivia</h3>
                     <details>
@@ -85,16 +89,15 @@
                             </p>
                            
                     </details>
-                   
-                </aside>
+                   </aside>
 
-                </div>
+                
+                <img class="img-about" src="https://lynhuasaigon.com/wp-content/uploads/2021/12/vi-tri-cua-hang.jpg" alt="Drinking water preparation process" title="Starbucks" width="350px" height="200px">
             </div>
-            
-            <article id="about">
-                <div class="process">
-                    <img class="img-process" src="https://i0.wp.com/elplanetaurbano.com/wp-content/uploads/2018/09/Starbucks1-1.jpg?resize=1250%2C781&ssl=1" alt="Starbucks headquarters" title="Starbucks">
-                        <div class="process-note">
+        
+    <div class="main-SB">
+            <img class="img-process" src="https://i0.wp.com/elplanetaurbano.com/wp-content/uploads/2018/09/Starbucks1-1.jpg?resize=1250%2C781&ssl=1" alt="Starbucks headquarters" title="Starbucks" width="380px" height="200px">
+            <article>
                             <h3>Processing stage</h3>
                     <details>
                         <summary>What are some indispensable ingredients in the concoction?</summary>
@@ -114,11 +117,7 @@
                                             </ul>
                                         </nav>
                                     <br>
-                                   
-                                    <div class="note-font">
-                                        <div class="note2-font">
                                             <li>In addition, it is to set up equipment and machines,...❤️</li>
-                                        </div>
                                         <br>
                                                 <ul>
                                                     <li>Complete brand package (cups, cups, shelves, decals...).</li>
@@ -127,23 +126,17 @@
                                                     <li>Ideas to attract customers.</li>
                                                 </ul>
                                                 
-                                                
-                                    </div>
+            </article>                                   
                                 </ol>
                     </details>
-
-                        </div>
-                            <div class="process-note2">
                                 <h2>Production process <abbr title="Starbucks">SB</abbr> 🍸</h2>
                                 <p>
                                     <abbr title="Starbucks">SB </abbr> has common frameworks. That is arrange formulas, posters and reconcile everything. Bartenders will have to feel  how to be creative
                                     and start to learn how to feel through each stage of preparation.
                                 </p>
         
-
-                            </div>
-                </div> 
-            </article>
+                
+           
         </div>
       
         
@@ -158,8 +151,8 @@
     <hr>
     <hr>
     <footer>
-        <div class="copy">
-            <p>Copyright &copy; The Little Starbucks Shop</p>
+        <div id="bottom">
+            <p> <marquee width="100%" behavior="alternate" bgcolor="sienna">Copyright &copy; The Little Starbucks Shop</marquee> </p>
         </div>
     </footer>
 </body>
