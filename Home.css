@@ -18,11 +18,12 @@ header {
     display: flex;
     /*text-align: left;*/
     /*justify-content: space-evenly ;*/
-    border-bottom: double rgb(224, 147, 111);
+    /*border-bottom: double rgb(224, 147, 111);*/
     background: url(https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-nau-dat-vintage-phoi-chi-tiet-xinh-xan.jpg) ;
     margin-top: -0.5em;
     font-size: 100%;
     transition: 1s;
+    box-shadow: 0 0.5em 0.5em brown; /*Do bong cho mau*/
 }
 
 .logo {
@@ -37,19 +38,52 @@ ul#main-menu {
     list-style: none;
 }
 
-
-nav #main-menu li {
-    text-align: center;
-    padding: 1em 0 0 5em;
-    place-items: 10em;
-    color: gray;
-    display: block;
+nav #main-menu i {
+    color:whitesmoke;
+   
 }
 
+
+nav #main-menu li {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.6em 0 0 4em;
+    place-items: 10em;
+    color: rgb(131, 129, 129);
+    display: block;
+    transition: 1.5s;
+}
+
+
 nav #main-menu li:hover a {
+  
     background:linear-gradient(to top right,#493f3f, #eeb8b8 ) ;
     transition: all 0.2s ;
 }
+
+@media screen and (max-width: 1024px) {
+    #main-menu {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #toggle {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+}
+
+
+#toggle {
+    display:;
+    color: whitesmoke;
+    text-align: right;
+    padding: 1.5em 0 0 3em ;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
 
 .logo-gh-fb-tw {
     display: flex;
@@ -68,12 +102,20 @@ nav #main-menu li:hover a {
 .logo-twitter {
     margin: -0.7em 0 0em 1.2em;
 }
-/*---------HEADER--------*/
+/*--------END-HEADER--------*/
 
 main {
+    font-size: large;
     max-width: 100%;
     margin-top: 8em;
 }
+
+/*@media  and (max-width:360px) {
+    .main-about, .main-SB {
+        flex-direction:fullscreen;
+    }
+    
+}*/
 
 .main-about {
     display: flex;
