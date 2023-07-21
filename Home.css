@@ -1,10 +1,15 @@
 
+
 html {
     background-image: url(https://img.freepik.com/vektoren-kostenlos/katzenliebhaber-muster-hintergrunddesign_53876-100662.jpg?w=2000);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: 10px;
-  
+    background-attachment: fixed;
+    background-position:center center;
 }
+
+
+
 /*-----HEADER------*/
 
 header {
@@ -143,6 +148,27 @@ ul#main-menu a:hover::after {
 
 
 /*--------END-HEADER--------*/
+
+@media screen and (max-width:500px){
+    .about-about, .SB-production, #end-home {
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .bottom-copy {
+        display:none;
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .img-about, .img-SB {
+        display: none;
+    }
+}
+
+
 
 main {
     font-size: large;
