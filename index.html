@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Cheris">
         <meta name="description" content="The official website for The Little Starbucks Shop">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Little Starbucks Shop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,17 @@
 
     <body>  
         <script>
+            /*$(document).ready(function() {
+                $(window).scroll(function() {
+                    if($(this).scrollTop()) {
+                        $('header').addClass('sticky');
+                }else{
+                    $('header').addClass('sticky');
+                }
+                });
+            });*//*----Lam mo thanh header Co dinh----*/
             $(document).ready(function() {
-                $('#toggle').click(function() {
+                $('.logo-menu').click(function() {
                    $('nav').slideToggle();
                 });
             })
@@ -30,11 +39,11 @@
         <div id="top">
             <header>
                 <div class="top-logo">    
-                        <a href="https://www.starbucks.vn/"><img src="starbuck.png" alt="logo" title="Starbucks" width="70px" height="70px" ></a> 
-                        <a class="logo"> The Little Starbucks Shop</a>
-                            <div id="toggle">
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
+                        <img class="logo-menu" src="starbuck.png" alt="logo" title="Starbucks" width="75px" height="70px" >
+                    <div class="logo" >
+                        <a > The Little Starbucks Shop</a>
+                    </div>
+                        
                             <nav>
                                 <ul id="main-menu">
                                         <li >
@@ -56,16 +65,24 @@
                                         </li>
                                    
                                         <li >
-                                            <a href="Join.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                                            <a href="Join.html"><i class="fa-solid fa-right-to-bracket"></i></a> 
+                                        </li>
+                                        <li>
                                             
                                         </li>
+                                        <li>
+                                            
+                                        </li>
+                                        <li>
+                                           
+                                        </li>
+                                 
+                                    
                                 <div id="action"></div>
                                 <div class="logo-gh-fb-tw">
-                                    <a href="https://github.com/Cheris2810"><img class="logo-github" src="icongithub.png" alt="logo" title="GitHub" width="45px" height="43px"></a>
-                                    <a href="https://www.facebook.com/lam.nhu.5817/">
-                                    <img class="logo-face" src="iconface.png" alt="logo" title="Facebook"></a> 
-                                    <a href="https://twitter.com/LmNh20545310">
-                                    <img class="logo-twitter" src="icontwitter.png" alt="logo" title="Twitter"></a>
+                                    
+                                    
+                                    
                                 </div>
                           
                                 </ul> 
@@ -147,6 +164,8 @@
                     
             
             </div>
+            
+            
         
             
                 <br>
@@ -161,6 +180,13 @@
         <footer>
             <div id="bottom">
                 <p> <marquee width="100%" behavior="alternate" >Copyright &copy; The Little Starbucks Shop</marquee> </p>
+                <div class="logo-gh-fb-tw">
+                    <a href="https://github.com/Cheris2810"><img class="logo-github" src="icongithub.png" alt="logo" title="GitHub" width="45px" height="43px"></a>
+                  
+                    <a href="https://www.facebook.com/lam.nhu.5817/">
+                    <img class="logo-face" src="iconsface.png" alt="logo" title="Facebook"45px" height="43px"></a> 
+    
+                </div>
             </div>
         </footer>
     </body>

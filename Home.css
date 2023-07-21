@@ -1,3 +1,4 @@
+
 html {
     background-image: url(https://img.freepik.com/vektoren-kostenlos/katzenliebhaber-muster-hintergrunddesign_53876-100662.jpg?w=2000);
     background-size: cover;
@@ -7,17 +8,23 @@ html {
 /*-----HEADER------*/
 
 header {
-    position: fixed;
+    position: fixed; /*Co dinh thanh menu*/
     top: 0.5em;;
     left: 0;
     width: 100%;
     font-weight: bold;
 }
 
+header.sticky {
+    background: url(https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-nau-dat-vintage-phoi-chi-tiet-xinh-xan.jpg);
+    opacity: 1px;
+   /* opacity: 70%; chinh do mo cua thanh menu*/
+}
+
 .top-logo {
     display: flex;
     /*text-align: left;*/
-    /*justify-content: space-evenly ;*/
+    justify-content: space-around ;
     /*border-bottom: double rgb(224, 147, 111);*/
     background: url(https://khoinguonsangtao.vn/wp-content/uploads/2022/08/hinh-nen-nau-dat-vintage-phoi-chi-tiet-xinh-xan.jpg) ;
     margin-top: -0.5em;
@@ -27,15 +34,31 @@ header {
 }
 
 .logo {
+    display:block;
+    justify-content: right;
     font-family:"Josefin Sans";
-    font-size: xx-large;
-    margin: 0.8em 0;
+    font-size: x-large;
+    margin: 1em 0;
     color: wheat ;
 }
 
 ul#main-menu {
+    margin: 1em 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
     display: flex;
     list-style: none;
+}
+
+ul#main-menu a {
+    text-transform: uppercase;
+
 }
 
 nav #main-menu i {
@@ -43,71 +66,89 @@ nav #main-menu i {
    
 }
 
+@media screen and (max-width:) {
+    
+}
+
 
 nav #main-menu li {
+    margin-block-start: 6.5%;
+    writing-mode: horizontal-tb;
     font-size: 1.2em;
-    text-align: center;
-    padding: 0.6em 0 0 4em;
+    /*text-align: center;*/
+    padding: 0.6em 0 0 3em;
     place-items: 10em;
     color: rgb(131, 129, 129);
-    display: block;
+    /*display: block;*/
     transition: 1.5s;
 }
 
+a {
+    position: relative;
+}
 
-nav #main-menu li:hover a {
+ul#main-menu a::after {
+    content:"" ;
+    height: 5px;
+    width: 0;
+    background: orange ;
+    position:absolute;
+    top: 1.3em;
+    left: -0.5em;
+    transition: all 0.3s ease-in-out;
+}
+
+ul#main-menu a:hover::after {
+    width: 0.9em;
+    transform: translateX(60%) ;
+}
+
+/*nav #main-menu li:hover a {
   
     background:linear-gradient(to top right,#493f3f, #eeb8b8 ) ;
     transition: all 0.2s ;
-}
+}*/
 
 @media screen and (max-width: 1024px) {
     #main-menu {
-        flex-direction: column-reverse;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
         text-align: center;
-    }
-    #toggle {
-        display: block;
     }
     nav {
         display: none;
     }
 }
 
+@media screen and (max-width:1000px ) {
+    .logo {
+        display: none;
+    }
+}
 
-#toggle {
-    display:;
-    color: whitesmoke;
-    text-align: right;
-    padding: 1.5em 0 0 3em ;
-    font-size: 1.2em;
+.logo-menu {
     cursor: pointer;
 }
 
 
-.logo-gh-fb-tw {
-    display: flex;
-    padding: 0.5em 0 0 5em;
-    color:wheat ;
-}
+/*.toggle {
+    display: none;
+    color: whitesmoke;
+    /*text-align: right;
+    padding: 1.5em 0 0 3em ;
+    font-size: 1.2em;
+    cursor: pointer; Thay doi Con tro chuot
+}*/
 
-.logo-github {
-    margin: -0.5em 0 0em 4em;
-}
 
-.logo-face {
-    margin: -0.7em 0 0em 1.5em;
-}
 
-.logo-twitter {
-    margin: -0.7em 0 0em 1.2em;
-}
 /*--------END-HEADER--------*/
 
 main {
     font-size: large;
     max-width: 100%;
-    margin-top: 8em;
+    margin: 8em 1.5em 0 0;
+    /*text-transform: capitalize;*/
 }
 
 /*@media  and (max-width:360px) {
@@ -137,7 +178,6 @@ main {
 }
 
 
-
 article  {
     position: relative;
     left: 1.5em;
@@ -146,10 +186,10 @@ article  {
 }
 
 p {
-    margin: 1.5em 2em 0 2em;
+    margin: 1.5em 2em 0 1.5em;
 }
 
-h2 {
+h2, h3 {
     margin: 1em 0 0 2em;
 }
 
@@ -159,4 +199,17 @@ h2 {
     top: 38em;
     right: 2em;
     size: 50em;
+}
+
+.logo-gh-fb-tw {
+    width: 100%;
+    text-align: end;
+    padding: 1em 0 0 0;
+    color:wheat ;
+}
+
+#bottom {
+    margin: 3em 0 0 0;
+   
+    
 }
