@@ -1,0 +1,136 @@
+html {
+    background: black;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style: none;
+  
+}
+
+/*ul.list a {
+    color: black;
+    text-decoration: none;
+}*/
+
+a { 
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.dropdown:hover > .label {
+    border-color: transparent;
+    background:linear-gradient(black,red);
+    color: white;
+}
+
+.dropdown:hover > .list {
+    max-height: 100vh;
+    transition: max-height 0.7s ease-in;
+    border: 0.5px solid rgb(201, 107, 107);
+    /*border: 1px solid white;*/
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    width: 5em;
+}
+.dropdown > .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    padding:7%;
+    border:1px solid white;
+    border-radius: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.dropdown > .list {
+    font-weight: bold;
+    position: absolute;
+    top: 100%;
+    width: 55%;
+    max-height:0;
+    overflow: hidden;
+    padding: 0 20px 0 0 ;
+    border-radius: 4px;
+    list-style: none;
+    transition: max-width 0.35s ease-out;
+}
+
+.dropdown > .dropdown-menu {
+    display: none;
+    height: 2px;
+    opacity: 0;
+}
+
+.dropdown:hover > .home {
+    border-color: transparent;
+    background:linear-gradient(black,red);
+    color: white;
+}
+
+.dropdown > .home {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding:7%;
+    border:0.5px solid white;
+    border-radius: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.list {
+    background: rgb(82, 42, 42);
+    transition: all 0.3s ease-in;
+    color: black;
+}
+
+
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-dropdown {
+    display: flex;
+}
+
+li {
+    padding: 0 1em 0 0.5em;
+}
+
+.logo-menu {
+    cursor: pointer;
+}
+
+/*ul.list a::after {
+    content:"";
+    height: 3.5px;
+    width:0;
+    background: red;
+    position: absolute;
+    top:1em;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.list a:hover::after {
+    width: 0.9em;
+    transform: translateX(60%);
+}*/
+

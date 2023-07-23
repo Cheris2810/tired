@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style></style>
+        <meta charset="UTF-8">
+        <meta name="author" content="Cheris">
+        <meta name="description" content="The official website for The Little Starbucks Shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="icon" href="iconcoffe.png" type="image/x-icon/">
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Menu.css">
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $('.logo-menu').click(function() {
+                   $('nav').slideToggle();
+                });
+            });
+        </script>
+        <header>
+            <div class="top-menu">
+                <img class="logo-menu" src="starbuck.png" alt="logo" title="Starbucks" width="75px" height="70px">
+                <nav>
+                    <ul class="top-dropdown">
+                        <li class="dropdown">
+                            <span class="label">Menu
+                            <!--<span>&#9662</span>--></span>
+                            <div class="dropdown-menu"></div>
+                                <ul class="list">
+                                    <li><a href="#">Cream</a></li>
+                                    <li><a href="NoCream.html">NoCream</a></li>
+                                    <li><a href="Hot.html">Hot</a></li>
+                                    <li><a href="PickUp.html">PickUp</a></li>
+                                </ul>
+                        </li>
+                        <li class="dropdown">
+                            <span class="home"><a href="index.html">Home</a></span> 
+                        
+                        <li class="dropdown">
+                            <span class="home"><a href="Contact.html">Contact</a></span></li>
+                        <li class="dropdown">
+                            <span class="home"><a href="Join.html">Join</a></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
+    <footer>
+
+    </footer>
+</html>
