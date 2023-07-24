@@ -19,16 +19,7 @@
                 });
             });
         </script>
-        <!--hieu ung phan main-->
-        <script type="text/javascript">
-            function imgSlider(anything){
-                document.querySelector('.cream').src = anything ;
-            }
-            function changeBgColor(color){
-                const sec = document.querySelector('.sec');
-                sec.style.background = color;
-            }
-        </script>
+        
         <header>
             <div class="top-menu">
                 <img class="logo-menu" src="starbuck.png" alt="logo" title="Starbucks" width="75px" height="70px">
@@ -57,15 +48,28 @@
             </div>
         </header>
         <section class="sec">
-            <div class="imgBox"><img src="cream1.png" class="cream" width="25%"></div>
             <ul class="thumb">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <div class="img-cream">
+                    <li><img class="img-cream1" src="cream1.png" onclick="imgSlider('cream1.png')"></li>
+                    <li><img class="img-cream2" src="cream2.png" onclick="imgSlider('cream2.png')"></li>
+                    <li><img class="img-cream2" src="cream3.png" onclick="imgSlider('cream3.png')"></li>
+                    <li><img class="img-cream1" src="cream4.png" onclick="imgSlider('cream4.png')" ></li>
+                </div>
             </ul>
+            <div class="clip-path"></div>
+            <div class="imgBox"><img src="cream1.png" class="cream" width="25%"></div>
+        
         </section>
-
+        <!--hieu ung phan main-->
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.cream').src = anything ;
+            }
+            /*function changeBgColor(color){
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }*/
+        </script>
 
     </body>
     <footer>
