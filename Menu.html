@@ -15,14 +15,24 @@
         <script>
             $(document).ready(function() {
                 $('.logo-menu').click(function() {
-                   $('nav').slideToggle();
+                   $('.nav-menu').slideToggle();
                 });
             });
+        </script>
+        <!--hieu ung phan main-->
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.cream').src = anything ;
+            }
+            function changeBgColor(color){
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
         </script>
         <header>
             <div class="top-menu">
                 <img class="logo-menu" src="starbuck.png" alt="logo" title="Starbucks" width="75px" height="70px">
-                <nav>
+                <nav class="nav-menu">
                     <ul class="top-dropdown">
                         <li class="dropdown">
                             <span class="label">Menu
@@ -46,8 +56,26 @@
                 </nav>
             </div>
         </header>
+        <section class="sec">
+            <div class="imgBox"><img src="cream1.png" class="cream" width="25%"></div>
+            <ul class="thumb">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+
     </body>
     <footer>
-
+        <nav id="footer-icon">
+            <ul class="footer-ul">
+                <div class="title">
+                <li class="ion-icon"><a href="https://github.com/Cheris2810"><img src="icongit.png" alt="GitHub" width="45px" height="43px"></a></li></div>
+                <div class="title"><li class="ion-icon"><a href="https://www.facebook.com/lam.nhu.5817/"><img src="iconfb.png" alt="Facebook" width="45px" height="43px"></a></li></div>
+            </ul>
+        </nav>
+    
     </footer>
 </html>
