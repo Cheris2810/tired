@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Menu</title>
         <link rel="icon" href="iconcoffe.png" type="image/x-icon/">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:ital@1&family=Pacifico&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="Menu.css">
     </head>
@@ -50,17 +53,37 @@
         <section class="sec">
             <ul class="thumb">
                 <div class="img-cream">
-                    <li><img class="img-cream1" src="cream1.png" onclick="imgSlider('cream1.png')"></li>
+                    <li class="active"><img class="img-cream1" src="cream1.png" onclick="imgSlider('cream1.png')"></li>
                     <li><img class="img-cream2" src="cream2.png" onclick="imgSlider('cream2.png')"></li>
                     <li><img class="img-cream2" src="cream3.png" onclick="imgSlider('cream3.png')"></li>
-                    <li><img class="img-cream1" src="cream4.png" onclick="imgSlider('cream4.png')" ></li>
+                    <li><img class="img-cream3" src="cream4.png" onclick="imgSlider('cream4.png')" ></li>
+                    <div id="action"></div>
                 </div>
             </ul>
-            <div class="clip-path"></div>
-            <div class="imgBox"><img src="cream1.png" class="cream" width="25%"></div>
+            
+                <div class="clip-path"></div>
+                <div class="imgBox"><img src="cream1.png" class="cream" width="33%"></div> 
+            <div class="main-strawberry">
+                <h1 class="font-h1">Strawberries Crème Frappuccino 🍨</h1>
+                <p class="font-p">Strawberry syrup and whipped cream make up the flavor of this Strawberries Frappucino. If you can't use too sweet, you can leave out the whipped cream and then the taste of the drink will be just right, not too sweet when you use it. Because whipped cream is usually sweetened, typically with white sugar, and sometimes flavored with vanilla. So this can also be considered as the unique flavor of this frappuccino, a little fat of cream, a little sweet and sour of strawberry syrup, mixed together. (Source:<cite><a href="https://en.wikipedia.org/wiki/Whipped_cream" target="_blank"><strong>Wikipedia</strong></a></cite>)</p>
         
+        
+        <nav id="footer-icon">
+            <ul class="footer-ul">
+                <div class="title">
+                    <li class="ion-icon"><a href="https://github.com/Cheris2810"><img src="icongit.png" alt="GitHub" width="45px" height="43px"></a></li>
+                    <div class="title-2">
+                        <li class="ion-icon"><a href="https://www.facebook.com/lam.nhu.5817/">
+                        <img src="iconfb.png" alt="Facebook" width="45px" height="43px"></a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    </main>  
         </section>
         <!--hieu ung phan main-->
+        <script src="Menu.js"></script>
         <script type="text/javascript">
             function imgSlider(anything){
                 document.querySelector('.cream').src = anything ;
@@ -72,7 +95,7 @@
         </script>
 
     </body>
-    <footer>
+    <!--<footer>
         <nav id="footer-icon">
             <ul class="footer-ul">
                 <div class="title">
@@ -85,5 +108,5 @@
             </ul>
         </nav>
     
-    </footer>
+    </footer>-->
 </html>

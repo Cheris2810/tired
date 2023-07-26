@@ -1,5 +1,5 @@
 html {
-    background:linear-gradient(black,#c40bc488) ;
+    background: linear-gradient(to bottom right, black, rgb(182, 5, 182));
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,14 +28,14 @@ a {
 
 .dropdown:hover > .label {
     border-color: transparent;
-    background:linear-gradient(black,red);
+    background:linear-gradient(black,rgb(241, 23, 241));
     color: white;
 }
 
 .dropdown:hover > .list {
     max-height: 100vh;
     transition: max-height 0.7s ease-in;
-    border: 0.5px solid rgb(201, 107, 107);
+    border: 1px solid rgb(0, 0, 0);
     /*border: 1px solid white;*/
 }
 
@@ -82,7 +82,7 @@ a {
 
 .dropdown:hover > .home {
     border-color: transparent;
-    background:linear-gradient(black,red);
+    background:linear-gradient(black,rgb(241, 23, 241));
     color: white;
 }
 
@@ -100,7 +100,7 @@ a {
 }
 
 .list {
-    background: rgb(82, 42, 42);
+    background: rgb(51, 20, 51);
     transition: all 0.3s ease-in;
     color: black;
 }
@@ -140,27 +140,55 @@ ul.list a:hover::after {
 }*/
 /*--------End Header-------*/
 /*-----body------*/
+
+.main-strawberry {
+    position: relative;
+    left: 55vh;
+    top: -40vh;
+    font-family:'Josefin Sans' ;
+    text-align: center;
+}
+
+.font-h1 {
+    writing-mode: horizontal-tb;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-right: 0;
+    text-shadow: rgb(255, 49, 221) 1px 0 10px;
+}
+
+p {
+    font-size: medium;
+    margin-left: 60px ;
+}
+
 section {
     position: relative;
-    width: 50%;
-    min-height: 40vh;
-    padding: 2em 0;
-    transition: 0.5s;
+    height: 50vh;
+    width: 66%;
+    min-height: 35vh;
+    padding-top:5%;
+    transition: 1s;
 }
 
-.clip-path {
+/*.clip-path {
     clip-path:path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
     background:black;
-}
+}*/
 
 .imgBox {
-    width: 65em;
+    box-sizing: border-box;
+    width: 100%;
+    height:100%;
     /*display: flex;*/
-    padding-right: 0;
-    margin-left: 1em;
+    padding-top: 0;
+    padding-left: 2em;
+    margin-left: 15vh;
     position: relative;
-    animation: bounce 4s ease-in-out infinite ;
+    animation: bounce 4.5s ease-in-out infinite ;
     cursor: pointer;
+    /*border: solid;*/
+    /*padding: 2em 3em;*/
 }
 
 @keyframes bounce {
@@ -174,10 +202,10 @@ section {
     }
     50% {
         top:0px;
-        bottom: 20px;
+        bottom: 25px;
     }
     70% {
-        top: 20px;
+        top: 25px;
         bottom: 0px;
     }
     100% {
@@ -189,29 +217,69 @@ section {
 
 
 .img-cream {
-    display: flex;
-    max-width: 160px;
+    /*float: left;*/
+    float: left;
+    /*max-width: 100px;*/
     list-style: none;
     margin: 0 -5px;
     cursor: pointer;
     transform: scale(0.6);
-}
+    padding: 0  0.5em;
 
-.img-cream {
     border: 0 solid;
     box-shadow: inset 0 0 20px pink;
     border-radius: 1em;
-    outline-color: rgb(104, 12, 12);
+    outline-color: rgb(223, 9, 9);
     outline: 1px solid;
     outline-offset: 0;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: rgb(94, 25, 94);
+}
+
+li.active {
+    position: relative;
+    z-index: -1;
+}
+
+#action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1em;
+    background: rgb(255, 181, 193);
+    width: 100%;
+    height: 23%;
+    z-index: -2;
+    transition: 1s;
+}
+
+#action::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgb(212, 24, 181);*/
+    background: rgb(18, 92, 252);
+    border-radius: 1em;
+    filter:blur(30px);
+    transition: 1s;
+}
+
+div li:nth-child(2).active~#action::before {
+    background-color: rgb(248, 137, 206);
+}
+
+div li:nth-child(4).active~#action::before {
+    background-color:rgb(248, 137, 206);
 }
 
 .img-cream:hover {
     border: 1px solid;
-    box-shadow: inset 0 0 20px rgb(236, 134, 202), 0 0 20px rgb(241, 53, 53);
+    box-shadow: inset 0 0 20px rgb(234, 6, 255),  0 0 20px #00bef8;
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px pink;
+    text-shadow: 1px 1px 2px rgb(233, 9, 46);
 }
 
 
@@ -228,11 +296,18 @@ div.img-cream li:hover::after {
 }*/
 
 .img-cream1 {
-    max-width: 60px;
+    max-width: 55px;
+    margin-bottom: 1em;
 }
 
 .img-cream2 {
+    max-width: 50px;
+    margin-bottom: 1em;
+}
+
+.img-cream3 {
     max-width: 55px;
+    margin-bottom:0;
 }
 
 .thump {
@@ -243,11 +318,11 @@ div.img-cream li:hover::after {
 }
 
 .thump li:hover {
-    transform: translateY(-15px);
+    transform: translateX(-15px);
 }
 
 .thump, .img-cream {
-    max-width: 5em;
+    max-width: 4.6em;
     /*display: flex-end;*/
 }
 
@@ -332,7 +407,7 @@ ul.footer-ul li {
 }
 
 img.ion-icon{
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .ion-icon {
@@ -345,6 +420,6 @@ img.ion-icon{
 
 .ion-icon:hover {
     border: 0 solid;
-    box-shadow: inset 0 0 20px rgb(80, 255, 159), 0 0 20px rgb(22, 248, 41);
+    box-shadow: inset 0 0 20px rgb(59, 241, 241), 0 0 20px rgb(22, 222, 248);
     outline-offset: 15px;
 }
