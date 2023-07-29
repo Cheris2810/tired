@@ -1,3 +1,5 @@
+/*@import "Menu2";*/
+
 html {
     background: linear-gradient(to bottom right, black, rgb(182, 5, 182));
     color: white;
@@ -130,6 +132,18 @@ ul.list a:hover::after {
 }*/
 /*--------End Header-------*/
 /*-----body------*/
+@media screen and (min-width:2024px) {
+    .container {
+        position: relative;
+        left: 44vh;
+        top: 37vh;
+    }
+
+    div.imgBox {
+        position: absolute;
+        width: 40%;
+    }
+}
 
 @media screen and (min-width:1450px) and (max-width:1920px) {
     .container {
@@ -186,28 +200,28 @@ ul.list a:hover::after {
     }
 }
 
-.font-p1 {
+#font-p1 {
     animation: click 1.5s ease-in-out 1 forwards;
     transition: 0.5s;
     position: absolute;
     z-index: 1;
 }
 
-.font-p2 {
+#font-p2 {
     animation: click 1s ease-in-out 1 forwards;
     transition: 0.5s;
     position: absolute;
     z-index: 1;
 }
 
-.font-p3 {
+#font-p3 {
     animation: click 0.5s ease-in-out 1 forwards;
     transition: 0.5s;
     position: absolute;
     z-index: 1;
 }
 
-.font-p4 {
+#font-p4 {
     animation: click 0.2s ease-in-out 1 forwards;
     transition: 0.5s;
     position: absolute;
@@ -278,29 +292,12 @@ ul.list a:hover::after {
     text-shadow: rgb(7, 149, 243) 1px 0 10px;
 }
 
-.font-p {
-    font-size: large;
-    margin-left: 70px ;
-    text-shadow: rgb(12, 12, 236) 1px 0 10px;
-    border-radius: 1em;
-    margin-right: 2em;
-}
-
 .font-h2 {
     writing-mode: horizontal-tb;
     font-weight: bold;
     font-size: xx-large;
     margin-left:2em;
     text-shadow: rgb(226, 0, 196) 1px 0 10px;
-}
-
-.font-h2-p2 {
-    font-size: large;
-    margin-left: 70px ;
-    font-family:'Lato' ;
-    text-shadow: rgb(226, 0, 196) 1px 0 10px;
-    border-radius: 1em;
-    margin-right: 2em;
 }
 
 .font-h3 {
@@ -311,6 +308,35 @@ ul.list a:hover::after {
     text-shadow: rgb(252, 13, 13) 1px 0 10px;
 }
 
+.font-h4 {
+   writing-mode: horizontal-tb;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left:2em;
+    text-shadow: rgb(155, 6, 255) 1px 0 10px;
+}
+
+.font-p {
+    font-size: large;
+    margin-left: 70px ;
+    text-shadow: rgb(12, 12, 236) 1px 0 10px;
+    border-radius: 1em;
+    margin-right: 2em;
+}
+
+
+
+.font-h2-p2 {
+    font-size: large;
+    margin-left: 70px ;
+    font-family:'Lato' ;
+    text-shadow: rgb(226, 0, 196) 1px 0 10px;
+    border-radius: 1em;
+    margin-right: 2em;
+}
+
+
+
 .font-h3-p3 {
     font-size: large;
     margin-left: 70px ;
@@ -320,13 +346,7 @@ ul.list a:hover::after {
     margin-right: 2em;
 }
 
-.font-h4 {
-    writing-mode: horizontal-tb;
-    font-weight: bold;
-    font-size: xx-large;
-    margin-left:2em;
-    text-shadow: rgb(155, 6, 255) 1px 0 10px;
-}
+
 
 .font-h4-p4 {
     font-size: large;
