@@ -104,13 +104,19 @@ a {
     justify-content: space-between;
 }
 
-.top-dropdown {
+.nav-menu {
     display: flex;
 }
 
-li {
+.top-dropdown {
+   display: flex;
+}
+
+.top-dropdown {
+   
     padding: 0 1em 0 0.5em;
 }
+
 
 .logo-menu {
     cursor: pointer;
@@ -263,6 +269,8 @@ ul.list a:hover::after {
 .content {
     top: 0;
     /*transform: translate(0,-50%);*/
+    opacity: 0;
+    animation: click 1.7s ease-in-out 1 forwards;
 }
 
 .item:nth-child(1)>.content {
@@ -270,10 +278,6 @@ ul.list a:hover::after {
     z-index: 11111;
 }
 
-.content {
-    opacity: 0;
-    animation: click 1.7s ease-in-out 1 forwards;
-}
 
 @keyframes click {
     form {
@@ -379,6 +383,7 @@ section {
     width: 50%;
     height:70%;
     padding-top: 0;
+    top:5vh;
     padding-left: 2em;
     margin: 0 15vh;
     position: relative;
